@@ -31,6 +31,7 @@ class TestCommand extends Command
             ->where('role', User::ROLE_ADMIN)
             ->join()
             ->get();
+        
         /*$users = User::query()
             ->where('role', User::ROLE_ADMIN)
             ->whereHas('order', function ($query) {
